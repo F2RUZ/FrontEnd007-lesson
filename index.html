@@ -1,109 +1,53 @@
-<!doctype html>
-<html lang="uz">
-<head>
-  <meta charset="utf-8" />
-  <title>Uyga vazifa — HTML asoslari</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-</head>
-<body>
-  <h1>Uyga vazifa: HTML asoslari (sinf ishi)</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
 
-  <h2>Topshiriqning maqsadi</h2>
-  <p>Ushbu topshiriq orqali siz:</p>
-  <ul>
-    <li>h1–h6 sarlavhalarini to‘g‘ri ishlatishni;</li>
-    <li>matnni <code>&lt;b&gt;</code>/<code>&lt;strong&gt;</code>, <code>&lt;i&gt;</code>/<code>&lt;em&gt;</code>, <code>&lt;s&gt;</code>/<code>&lt;del&gt;</code> bilan belgilashni;</li>
-    <li>kodingiz ichida <code>&lt;code&gt;</code>, <code>&lt;mark&gt;</code>, <code>&lt;u&gt;</code>, <code>&lt;small&gt;</code>, <code>&lt;sup&gt;</code>/<code>&lt;sub&gt;</code> elementlarini qo‘llashni;</li>
-    <li>ro‘yxatlar (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, g‘oyat muhim — ichma-ich ro‘yxatlarni) hamda ta'rif ro‘yxati (<code>&lt;dl&gt;</code>) bilan ishlashni;</li>
-    <li><code>&lt;img&gt;</code> atributlari — <code>alt</code>, <code>width</code>, <code>height</code> ni tushunishni va qo‘llashni;</li>
-    <li>va oddiy <code>&lt;br /&gt;</code> tegi orqali qatorlarni bo‘lishni amalda bajarishni o‘rganasiz.</li>
-  </ul>
+    <!-- <style>
+      p {
+        color: cyan;
+        font-size: 30px;
+        font-style: italic;
+      }
 
-  <h2>Topshiriq (qancha fayl)</h2>
-  <ol>
-    <li>Bir dona HTML fayl: <code>uyga-vazifa.html</code>.</li>
-  </ol>
+      body {
+        background-color: black;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- <h1 style="color: red;" >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident saepe
+      incidunt quis.
+    </h1> -->
 
-  <h2>HTML fayl tarkibi — aniq vazifalar</h2>
-  <ol>
-    <li>
-      <h3>Sarlavha va kichik kirish</h3>
-      <p>Fayl boshida <code>&lt;h1&gt;</code> bilan loyiha nomi, keyin <code>&lt;h2&gt;</code> va <code>&lt;h3&gt;</code> yordamida qisqacha kirish yozing (kamida 3 xil darajadagi sarlavha ishlating).</p>
-    </li>
+    <!-- <p>
+      voluptatum assumenda deleniti, accusantium nemo ut possimus sit enim
+      recusandae deserunt qui. Cupiditate repellendus a rem ad amet mollitia
+      velit, ut, exercitationem, esse doloremque tempore culpa qui et! Modi,
+      corrupti placeat maiores voluptatum pariatur ipsum possimus provident
+      culpa sequi cupiditate aperiam soluta. Autem, quidem!
+    </p>
 
-    <li>
-      <h3>Matn formatlash misollari</h3>
-      <p>Bir paragraf ichida quyidagi elementlarni qo‘llang:</p>
-      <ul>
-        <li><code>&lt;b&gt;</code> va <code>&lt;strong&gt;</code> — qalin qilish uchun (ikki xil namunani ko‘rsatish).</li>
-        <li><code>&lt;i&gt;</code> va <code>&lt;em&gt;</code> — kursiv/ta'kidlash uchun.</li>
-        <li><code>&lt;s&gt;</code> va <code>&lt;del&gt;</code> — bekor qilingan matn/uchirilgan so‘z uchun.</li>
-        <li><code>&lt;code&gt;</code> — kod qismini ko‘rsatish (masalan: <code>const x = 5;</code>).</li>
-        <li><code>&lt;mark&gt;</code> — muhim joyni marker bilan belgilash.</li>
-        <li><code>&lt;u&gt;</code> — ostiga chizish.</li>
-        <li><code>&lt;small&gt;</code> — kichik matn (ticket, izoh uchun).</li>
-        <li><code>&lt;sup&gt;</code> va <code>&lt;sub&gt;</code> — yuqori va pastki indeks (masalan: H<sub>2</sub>O yoki 10<sup>2</sup>).</li>
-      </ul>
-    </li>
+    <p>Salom</p>
+    <p class="name name2">Nurtas</p>
+    <p class="name">Begzod</p>
+    <p>Abror</p>
+    <p class="surname">Muhammad</p>
+    <p style="color: red">Doston</p>
+    <p>Azamat</p>
 
-    <li>
-      <h3>Ro‘yxatlar</h3>
-      <p>Quyidagi ro‘yxatlarni yarating:</p>
-      <ul>
-        <li>Bir <code>&lt;ul&gt;</code> (no tartibli) ro‘yxat, ichida kamida 3 element va ularning barchasida <code>&lt;em&gt;</code> ishlatilgan bo‘lsin.</li>
-        <li>Bir <code>&lt;ol&gt;</code> (tartibli) ro‘yxat, ichida kamida 3 element va unda ichma-ich <code>&lt;ul&gt;</code> bo‘lsin (ya'ni nested lists).</li>
-        <li>Bir ta'rif ro‘yxati (<code>&lt;dl&gt;</code>) — kamida 2 ta <code>&lt;dt&gt;</code> va <code>&lt;dd&gt;</code> juftligi (misol: Coffee / Black hot drink, Milk / White cold drink).</li>
-      </ul>
-    </li>
+    <h1 id="title">Salom hammaga</h1>
 
-    <li>
-      <h3>Rasm qo‘yish</h3>
-      <p>Saytga rasm qo‘ying (<code>&lt;img&gt;</code>) — internetdan yoki mahalliy (agar mahalliy bo‘lsa, nishonlang):</p>
-      <ul>
-        <li><code>src</code> manzili bo‘lishi kerak;</li>
-        <li><code>alt</code> atributi majburiy (rasm nima ekanligini yozing);</li>
-        <li><code>width</code> va <code>height</code> atributlarini qo‘llang (raqamlar yoki foiz ko‘rinishida).</li>
-        <li>Rasm ostiga qisqa izoh yozing (<code>&lt;figcaption&gt;</code> ishlatish ixtiyoriy).</li>
-      </ul>
-    </li>
+ -->
 
-    <li>
-      <h3>Line break va mark-up misoli</h3>
-      <p>Bir joyda <code>&lt;br /&gt;</code> dan foydalanib, matnni ikki qatorda ko‘ring. Shuningdek, sahifada <code>&lt;mark&gt;</code> bilan kamida bitta so‘zni belgilab qo‘ying.</p>
-    </li>
-
-    <li>
-      <h3>Qo‘shimcha</h3>
-      <p>Faylda <code>&lt;center&gt;</code> tegidan foydalanish haqida qisqacha (1-2 gap) eslatma yozing — <em>eskirgan / no-semantic</em> ekanligini ayting (HTML5-da markazlashtirish uchun CSS afzal).</p>
-    </li>
-  </ol>
-
-  <h2>Namuna (qisqa)</h2>
-  <pre>
-&lt;h1&gt;Mening birinchi HTML loyiham&lt;/h1&gt;
-&lt;p&gt;Bu yerda &lt;strong&gt;muhim&lt;/strong&gt; so'z va &lt;em&gt;ta'kidlangan&lt;/em&gt; so'z bo'ladi.&lt;br /&gt;
-Yangi qator boshlandi.&lt;/p&gt;
-  </pre>
-
-  <h2>Baholash mezonlari (20 ball)</h2>
-  <ul>
-    <li><strong>Struktura va sarlavhalar</strong> — 4 ball (h1–h3 ishlatilganmi).</li>
-    <li><strong>Matn elementlari</strong> — 4 ball (b,strong,i,em,s,del,code,mark,small, u ishlatilganligi).</li>
-    <li><strong>Ro‘yxatlar</strong> — 4 ball (ul, ol, nested va dl mavjudligi).</li>
-    <li><strong>Rasm va atributlar</strong> — 4 ball (alt, width/height to‘g‘ri qo‘llangan).</li>
-    <li><strong>Tuzilish va tozaligi</strong> — 4 ball (kommentlar, toza indentatsiya, fayl nomi).</li>
-  </ul>
-
-  <h2>Topshirish</h2>
-  <p>Faylni <code>uyga-vazifa.html</code> nomi bilan saqlang va sinfga yuboring. Agar rasm mahalliy bo‘lsa, rasm faylini ham birga zip qilib jo‘natish mumkin.</p>
-
-  <h2>Qo‘shimcha maslahatlar</h2>
-  <ul>
-    <li>HTML5 semantic elementlari (masalan: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>) haqida kichik bo‘lim qo‘shish ijobiy baholanadi, lekin majburiy emas.</li>
-    <li><code>&lt;center&gt;</code> tegidan foydalanish eskirganligi sabab, sahifani markazlashtirish uchun CSS o‘rganishni tavsiya eting.</li>
-  </ul>
-
-  <hr />
-  <p><small>Omad! Savollaringiz bo‘lsa, sinfda so‘rashingiz mumkin.</small></p>
-</body>
+    <h2 id="subtitle" class="title">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat voluptas
+      obcaecati repellendus architecto labore, minima qui. Expedita eum harum
+      explicabo. Doloribus, nisi fugiat?
+    </h2>
+  </body>
 </html>

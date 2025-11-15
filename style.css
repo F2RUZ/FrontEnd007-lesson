@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+}
+
+p {
+  /* font-weight: bolder; */
+  /* font-style: inherit; */
+  /* text-decoration: in; */
+  color: cyan;
+  /* font-size: 40px; */
+  /* line-height: 50px; */
+  /* letter-spacing: 30px; */
+  /* word-spacing: 40px; */
+  /* text-align: end; */
+  /* text-transform: capitalize; */
+  /* background-color: blueviolet; */
+}
+/* 
+h1 {
+  color: blue;
+}
+
+.name {
+  color: red;
+  font-size: 40px;
+}
+
+
+.name2{
+    color: chocolate;
+}
+
+
+.surname{
+    color: crimson;
+    font-size: 50px;
+}
+
+
+#title{
+    color: darkmagenta;
+} */
+
+#subtitle {
+  color: red;
+}
+
+.title {
+  color: cyan;
+}
