@@ -1,74 +1,130 @@
-body {
-  background-color: black;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
 
-p {
-  /* font-weight: bolder; */
-  /* font-style: inherit; */
-  /* text-decoration: in; */
-  color: cyan;
-  /* font-size: 40px; */
-  /* line-height: 50px; */
-  /* letter-spacing: 30px; */
-  /* word-spacing: 40px; */
-  /* text-align: end; */
-  /* text-transform: capitalize; */
-  /* background-color: blueviolet; */
-}
-/* 
-h1 {
-  color: blue;
-}
-
-.name {
-  color: red;
-  font-size: 40px;
-}
-
-
-.name2{
-    color: chocolate;
-}
-
-
-.surname{
-    color: crimson;
-    font-size: 50px;
-}
-
-
-#title{
-    color: darkmagenta;
-} */
-
-#subtitle {
-  color: red;
-}
-
-.title {
-  color: cyan;
-p {
-  font-weight: normal;
-  font-style: italic;
-  text-decoration: overline;
-  color: darkcyan;
-  font-size: 40px;
-  line-height: 300px;
-  /* letter-spacing: 40px; */
-  /* word-spacing: 50px; */
-  text-align: center;
-  width: 400px;
-  height: auto;
-  background-color: azure;
-  text-transform: capitalize;
-}
-
-body {
-  background-color: black;
+li {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: black;
-  cursor: pointer;
+}
+
+.wrapper {
+  width: 1400px;
+  /* height: 100px; */
+  background-color: white;
+  margin: 100px auto;
+  /* border-radius: 20px; */
+}
+
+.navbar {
+  padding: 20px;
+}
+
+body {
+  background-color: grey;
+}
+
+.navbar__img {
+  vertical-align: middle;
+  margin-left: 40px;
+}
+
+.navbar__list {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 460px;
+}
+
+.navbar__item {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.navbar__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  /* 1f1534-hyfen */
+  color: #1f1534;
+
+  opacity: 0.7;
+}
+/* intro.  */
+
+.intro {
+  margin-top: 100px;
+  margin-left: 40px;
+}
+
+.intro__left,
+.intro__right {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.intro__title {
+  /* Virtual healthcare for you */
+  width: 450px;
+  /* font-family: "Mulish"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  /* or 117% */
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+}
+
+.intro__text {
+  /* Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone */
+  width: 450px;
+  /* font-family: "Mulish"; */
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 32px;
+  /* or 152% */
+
+  color: #7d7987;
+
+  mix-blend-mode: normal;
+  margin: 50px 0;
+}
+
+.intro__img {
+  margin-left: 110px;
+}
+
+.intro__btn {
+  /* consult btn */
+
+  /* Rectangle 1 */
+
+  background: #458ff6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 55px;
+
+  /* Consult today */
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 60px;
+  /* or 333% */
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  width: 200px;
+  height: 60px;
+  border: none;
 }
