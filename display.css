@@ -1,0 +1,30 @@
+.text {
+  color: cyan;
+  font-size: 23px;
+  font-style: italic;
+  width: 200px;
+  display: inline-block;
+  vertical-align: bottom;
+  /* text-align: center; */
+
+  background-color: red;
+  margin: auto;
+}
+
+div {
+  background-color: cyan;
+}
+
+a {
+  width: 300px;
+  background-color: red;
+  color: white;
+}
+
+span {
+  color: red;
+}
+
+ul li a img {
+  /* display: none; */
+}
