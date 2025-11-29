@@ -235,3 +235,40 @@ body {
   margin: 50px auto;
   display: block;
 }
+
+.card {
+  width: 200px;
+  height: 200px;
+
+  background-color: purple;
+  /* background-color: rgb(255, 255, 255); */
+
+  /* background-color: rgba(45, 43, 53 , 0); */
+
+  /* background-color: hsl(hue, saturation, lightness); */
+
+  /* border-width: 2px;
+  border-style: ;
+  border-color: red; */
+
+  /* border: 2px nuqta qizil; */
+
+  /* border-top: 30px;
+  border-bottom: 30px; */
+
+  /* margin-top: 30px;
+
+  border-top: 20px solid red;
+  border-left: ; */
+
+  /* padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 50px;
+  padding-bottom: 60px; */
+
+  /* padding: 30px 50px 60px 40px; */
+
+  /* margin-top: 40px;
+  margin-left: 50px; */
+  /* margin-left: auto; */
+}
