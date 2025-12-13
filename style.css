@@ -1,11 +1,11 @@
-/* .cards {
-  width: 100%;
-  position: relative;
-  height: 100vh;
-
-  background-color: cadetblue;
-
-  background: url("./2306150-hd_1920_1080_30fps.mp4");
+/*
+* Reset and Base Styles
+*/
+body {
+  background-color: #1a1a2e; /* Very Dark Blue/Purple Background */
+  color: #e9e9f3; /* Light text for contrast */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 50px;
 }
 
 * {
@@ -14,50 +14,71 @@
   box-sizing: border-box;
 }
 
-.video {
+/*
+* Table Styling for Modern Dark UI
+*/
+table {
+  border-collapse: separate; /* Use separate for rounded corners on the table */
+  border-spacing: 0;
   width: 100%;
-  height: 100vh;
+  max-width: 800px; /* Constrain size for better visual appeal */
+  margin: 50px auto;
+  box-shadow: 0 10px 30px rgba(138, 43, 226, 0.4); /* Purple glow "wow" effect */
+  border-radius: 12px;
+  overflow: hidden; /* Important for applying border-radius to the whole table */
 }
-
-.box {
-  border: 1px solid red;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: cadetblue;
-
-  position: absolute;
-  top: 0;
-} */
 
 th,
 td {
-  border: 1px solid;
-  width: 200px;
-  padding: 2px 10px;
-  text-align: start;
+  padding: 15px 20px;
+  text-align: left;
+  /* Remove individual borders to let 'border-collapse: separate' handle the separation */
+  border: none;
 }
 
-table {
-  border-collapse: collapse;
+/* Table Header (<thead>) Styling */
+table head {
+  /* Background for the entire header row */
+  background-color: #8a2be2; /* BlueViolet - Primary Purple Accent */
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
 }
 
-th:nth-last-child(odd) {
-  background-color: aqua;
+th {
+  font-weight: 600;
 }
 
-th:nth-last-child(even) {
-  background-color: rgb(155, 183, 183);
+/* Remove the old nth-last-child styles and use better targeting */
+
+/* Target the header cells for a subtle gradient/alternating look */
+th:nth-child(even) {
+  background-color: #7d26d0; /* Slightly darker purple for even headers */
 }
 
-td:nth-last-child(odd) {
-  background-color: rgb(99, 187, 73);
+/* Table Body (<tbody>) Styling */
+tbody tr {
+  background-color: #2c2c42; /* Slightly lighter than body background for rows */
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-td:nth-last-child(even) {
-  background-color: rgb(221, 215, 43);
+/* Alternating Row Colors */
+tbody tr:nth-child(odd) {
+  background-color: #383854; /* Darker row for striping */
 }
 
-td:hover {
-  background-color: black;
-  color: white;
+/* Hover Effect on Rows - The main "WOW" effect */
+tbody tr:hover {
+  background-color: #8a2be2; /* Highlight the whole row with the main purple color */
+  color: #ffffff;
+  transform: scale(1.02); /* Slight scale up */
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.6); /* Individual row glow */
+  cursor: pointer;
 }
+
+/* Cell-specific hover: Less needed now, but can be used for extra detail */
+/* td:hover {
+  background-color: #9933ff;
+  color: #ffffff;
+} */
