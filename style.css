@@ -1,18 +1,63 @@
-div { 
-  width: 160px;
-  height: 80px;
-  padding: 20px;
-  border: 8px solid red;
-  background: yellow;
+/* .cards {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+
+  background-color: cadetblue;
+
+  background: url("./2306150-hd_1920_1080_30fps.mp4");
 }
 
-.content-box {
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  /* Total width: 160px + (2 * padding) + (2 * border) = 216px
-`
-  box-sizing: border-box;
-  /* Total width: 160px
-     Total height: 80px
-     Content box width: 160px - (2 * 20px) - (2 * 8px) = 104px
-     Content box height: 80px - (2 * 20px) - (2 * 8px) = 24px */
+}
+
+.video {
+  width: 100%;
+  height: 100vh;
+}
+
+.box {
+  border: 1px solid red;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: cadetblue;
+
+  position: absolute;
+  top: 0;
+} */
+
+th,
+td {
+  border: 1px solid;
+  width: 200px;
+  padding: 2px 10px;
+  text-align: start;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th:nth-last-child(odd) {
+  background-color: aqua;
+}
+
+th:nth-last-child(even) {
+  background-color: rgb(155, 183, 183);
+}
+
+td:nth-last-child(odd) {
+  background-color: rgb(99, 187, 73);
+}
+
+td:nth-last-child(even) {
+  background-color: rgb(221, 215, 43);
+}
+
+td:hover {
+  background-color: black;
+  color: white;
 }
