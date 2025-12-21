@@ -1,63 +1,95 @@
 /* .cards {
-  width: 100%;
   position: relative;
-  height: 100vh;
-
-  background-color: cadetblue;
-
-  background: url("./2306150-hd_1920_1080_30fps.mp4");
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.video {
-  width: 100%;
-  height: 100vh;
-}
-
-.box {
+  top: 230px;
+  left: 200px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  visibility: collapse;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  padding-top: 200px;
   border: 1px solid red;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: cadetblue;
+  box-sizing: border-box;
+  background-color: red;
+  background-attachment: fixed;
+  background-image: none;
+  background: linear-gradient();
+  box-shadow: 10px 10px 10px red;
+  font-weight: 900;
+  font-size: 200;
+  font-style: italic;
+  letter-spacing: 10px;
+  word-spacing: 130px;
+  line-height: 100px;
+} */
+/* 
+.cards {
+   position: relative;
+  width: 1200px;
+  margin: 100px auto;
+  border: 1px solid;
+  opacity: 0;
+}
 
-  position: absolute;
-  top: 0;
+.card {
+  width: 200px;
+  height: 200px;
+  background-color: greenyellow;
+  position: relative;
+}
+
+.card:nth-child(1) {
+  top: 100px;
+  left: 100px;
+  background-color: cyan;
+  z-index: 2;
+}
+
+.card:nth-child(2) {
+  top: 200px;
+  left: 200px;
+  background-color: rgb(19, 153, 28);
+  z-index: 3;
+}
+
+
+.card:nth-child(3) {
+  top: 300px;
+  left: 300px;
+  background-color: rgb(153, 108, 19);
+  z-index: 1;
+}
+
+.card:nth-child(4) {
+  top: 400px;
+  left: 400px;
+  background-color: rgb(157, 135, 92);
+  z-index: 1;
 } */
 
-th,
-td {
+.cards {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* flex-direction: column; */
+  /* justify-content: space-around; */
+  /* align-items: flex-end; */
+
+  flex-wrap: wrap;
+  width: 1200px;
+  height: 1200px;
+  margin: auto;
   border: 1px solid;
+  align-content: space-evenly;
+  justify-content: center;
+}
+
+.card {
   width: 200px;
-  padding: 2px 10px;
-  text-align: start;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-th:nth-last-child(odd) {
-  background-color: aqua;
-}
-
-th:nth-last-child(even) {
-  background-color: rgb(155, 183, 183);
-}
-
-td:nth-last-child(odd) {
-  background-color: rgb(99, 187, 73);
-}
-
-td:nth-last-child(even) {
-  background-color: rgb(221, 215, 43);
-}
-
-td:hover {
-  background-color: black;
-  color: white;
+  height: 200px;
+  background-color: blueviolet;
+  font-size: 70px;
 }
