@@ -47,28 +47,4 @@ h1 {
 
 .title {
   color: cyan;
-p {
-  font-weight: normal;
-  font-style: italic;
-  text-decoration: overline;
-  color: darkcyan;
-  font-size: 40px;
-  line-height: 300px;
-  /* letter-spacing: 40px; */
-  /* word-spacing: 50px; */
-  text-align: center;
-  width: 400px;
-  height: auto;
-  background-color: azure;
-  text-transform: capitalize;
-}
-
-body {
-  background-color: black;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
 }
